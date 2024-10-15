@@ -2,6 +2,19 @@ abecedario = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', '
 
 def cifCesar(clave, palabra):
     palabraCifrada = ""
-    posicionLetra = abecedario.index('a') + clave
-    palabraCifrada += abecedario[posicionLetra]
+    for letra in palabra:
+        if letra == " ":
+            palabraCifrada += " "
+        else:
+            posicionLetra = abecedario.index(letra)
+        
+            if (posicionLetra + clave) >= len(abecedario):
+                posicionNueva = clave - (27%posicionLetra)
+                palabraCifrada += abecedario[posicionNueva]
+            else:
+                posicionNueva = posicionLetra + clave
+                palabraCifrada += abecedario[posicionNueva]
     return palabraCifrada
+
+# Tupla len 27 [0-26]
+# x = 24 --> a = 0 || Clave = 3
