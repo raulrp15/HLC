@@ -1,6 +1,6 @@
 {
     "python.testing.pytestArgs": [
-        "Boletin02"
+        "."
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true
