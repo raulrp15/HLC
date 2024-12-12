@@ -18,3 +18,8 @@ def test_esGanador4():
     parchis = Parchis('Marco', 'Hector')
     parchis.fichaJ2 = 20
     assert parchis.esGanador() == "Hector"
+
+def test_esGanador5():
+    parchis = Parchis('Marco', 'Hector')
+    parchis.fichaJ1 = 20
+    assert parchis.esGanador() == "Marco"
