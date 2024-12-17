@@ -4,6 +4,7 @@ from Portfolio.Views.Components.Components import navbar_link
 
 class State(rx.State):
     value: bool = False
+    text_color = "white"
 
     @rx.event
     def toggle(self, value: bool):
