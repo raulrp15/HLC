@@ -3,7 +3,7 @@ from enum import Enum
 
 MAX_WIDTH = "600px"
 
-class Ruta():
+class Ruta(Enum):
     INDEX= "/"
     PROJECTS= "/projects"
     CONTACT= "/contact"

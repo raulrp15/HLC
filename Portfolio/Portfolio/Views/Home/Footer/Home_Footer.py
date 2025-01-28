@@ -19,14 +19,12 @@ def home_footer() -> rx.Component:
                     color=rx.color("purple", 12),
                     size=35),
                     href="https://x.com/el_trajeado", is_external=True),
-                    rx.link(
+            rx.link(
                 rx.icon(
-                    "twitter",
+                    "linkedin",
                     color=rx.color("purple", 12),
                     size=35),
-                    href="https://x.com/el_trajeado", is_external=True),
-            rx.icon("linkedin", color=rx.color("purple", 12), size=35),
-            rx.icon("dribbble", color=rx.color("purple", 12), size=35),
+                    href="https://www.linkedin.com/in/raúl-romera-pavón-6b21bb313/", is_external=True),
         ),
         align="center",
     )
